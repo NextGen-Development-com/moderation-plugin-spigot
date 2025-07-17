@@ -1,0 +1,9 @@
+de\moderation\ModerationPlugin.class
+de\moderation\commands\WarnCommand.class
+de\moderation\commands\GamemodeCommand.class
+de\moderation\commands\MuteCommand.class
+de\moderation\commands\HelpCommand.class
+de\moderation\commands\UnmuteCommand.class
+de\moderation\listener\ChatListener.class
+de\moderation\commands\KickCommand.class
+de\moderation\commands\FlyCommand.class

@@ -1,0 +1,52 @@
+name: ModerationPlugin
+version: 1.0
+main: de.moderation.ModerationPlugin
+api-version: 1.20
+author: NextGen Development
+website: https://nextgen-development.com
+
+commands:
+  kick:
+    description: Kick a player from the server
+    usage: /kick <player> [reason]
+  mute:
+    description: Mute a player
+    usage: /mute <player> [reason]
+  warn:
+    description: Warn a player
+    usage: /warn <player> [reason]
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+  fly:
+    description: Toggle flight mode
+    usage: /fly
+  gm:
+    description: Change your gamemode
+    usage: /gm <0|1|2|3>
+  help:
+    description: Show help for moderation commands
+    usage: /help
+
+permissions:
+  moderation.kick:
+    description: Allows use of /kick
+    default: op
+  moderation.mute:
+    description: Allows use of /mute
+    default: op
+  moderation.warn:
+    description: Allows use of /warn
+    default: op
+  moderation.unmute:
+    description: Allows use of /unmute
+    default: op
+  moderation.fly:
+    description: Allows use of /fly
+    default: op
+  moderation.gamemode:
+    description: Allows use of /gm
+    default: op
+  moderation.help:
+    description: Allows use of /help
+    default: op
