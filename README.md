@@ -58,10 +58,6 @@ Each command requires specific permission nodes. Use a permissions plugin (like 
 | `/unmute`  | `moderation.unmute`   |
 | `/help` | `moderation.help`     |
 
-## 📁 Commands Auto-Detection
-
-The `/help` command dynamically lists all available commands found in the `commands/` folder and registered via the `plugin.yml`. Usage instructions are derived automatically.
-
 ## 🧩 Setup
 
 1. Place the plugin `.jar` in your `plugins/` directory.

@@ -12,9 +12,6 @@ commands:
   mute:
     description: Mute a player
     usage: /mute <player> [reason]
-  warn:
-    description: Warn a player
-    usage: /warn <player> [reason]
   unmute:
     description: Unmute a player
     usage: /unmute <player>
@@ -27,6 +24,46 @@ commands:
   help:
     description: Show help for moderation commands
     usage: /help
+  balance:
+    description: Show your current balance
+    usage: /balance
+  pay:
+    description: Pay a player money
+    usage: /pay <player> <amount>
+  leaderboard:
+    description: Show the top 10 richest players
+    usage: /leaderboard
+  eco:
+    description: Manage player economy
+    usage: /eco <set|take> <player> <amount>
+  announce:
+    description: Send a server-wide announcement
+    usage: /announce <message>
+  god:
+    description: Toggle god mode for yourself or another player
+    usage: /god [player]
+  vanish:
+    description: Toggle vanish mode for yourself or another player
+    usage: /vanish [player]
+  feed:
+    description: Feed yourself or another player
+    usage: /feed [player]
+  heal:
+    description: Heal yourself or another player
+    usage: /heal [player]
+  clearchat:
+    description: Clear the chat for all players
+    usage: /clearchat
+  craft:
+    description: Craft items quickly
+    usage: /craft
+  enchant:
+    description: Enchant items
+    usage: /enchant <enchantment> [level]
+  ec:
+    description: Open your Ender Chest
+    usage: /ec [player]
+
 
 permissions:
   moderation.kick:
@@ -34,9 +71,6 @@ permissions:
     default: op
   moderation.mute:
     description: Allows use of /mute
-    default: op
-  moderation.warn:
-    description: Allows use of /warn
     default: op
   moderation.unmute:
     description: Allows use of /unmute
@@ -49,4 +83,37 @@ permissions:
     default: op
   moderation.help:
     description: Allows use of /help
+    default: true
+  moderation.balance:
+    description: Allows using /balance
+    default: true
+  moderation.pay:
+    description: Allows using /pay
+    default: true
+  moderation.leaderboard:
+    description: Allows usage of /leaderboard
+    default: true
+  moderation.eco.set:
+    description: Allows setting player balance
+    default: op
+  moderation.eco.take:
+    description: Allows taking money from player balance
+    default: op
+  moderation.announce:
+    description: Allows sending announcements
+    default: op
+  moderation.god:
+    description: Allows toggling god mode
+    default: op
+  moderation.vanish:
+    description: Allows toggling vanish mode
+    default: op
+  moderation.feed:
+    description: Allows feeding players
+    default: op
+  moderation.heal:
+    description: Allows healing players
+    default: op
+  moderation.clearchat:
+    description: Allows clearing the chat
     default: op

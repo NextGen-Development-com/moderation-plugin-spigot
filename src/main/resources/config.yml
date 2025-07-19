@@ -1,16 +1,41 @@
 prefix: "&8[&cModeration&8] &r"
+
 messages:
   no-permission: "{prefix}&cYou don’t have permission to use this command."
   player-not-found: "{prefix}&cPlayer not found."
   kicked: "{prefix}&aKicked &e{player} &afor &e{reason}&a."
   muted: "{prefix}&aMuted &e{player} &afor &e{reason}&a."
-  warned: "{prefix}&aWarned &e{player} &afor &e{reason}&a."
+  chat-blocked: "{prefix}&cYou are muted and cannot chat."
   not-muted: "{prefix}&c{player} is not muted."
   unmuted: "{prefix}&aUnmuted &e{player}&a."
   fly-enabled: "{prefix}&aFlight enabled."
   fly-disabled: "{prefix}&cFlight disabled."
   gm-usage: "{prefix}&cUsage: /gm <0|1|2|3>"
   gm-changed: "{prefix}&aYour game mode has been set to &e{mode}&a."
+  warn: "{prefix}&e{player} &chas been warned for &e{reason}&c."
+  warned: "{prefix}&cYou have been warned for &e{reason}&c."
+  help-header: "{prefix}&7Moderation Help:"
+  help-entry: "&8- &e/{command} &7→ {description}"
+  unknown-command: "{prefix}&cUnknown command."
+  announced: "{prefix}&aAnnouncement sent: &r{message}"
+  god-enabled: "{prefix}&aGod mode enabled."
+  god-disabled: "{prefix}&cGod mode disabled."
+  economy-balance: "{prefix}&aYour balance: &e{amount} Coins"
+  economy-give-success: "{prefix}&aGave &e{target} &a{amount} Coins."
+  economy-give-received: "{prefix}&aYou received &e{amount} Coins&a."
+  economy-pay-success: "{prefix}&aPaid &e{target} &a{amount} Coins."
+  economy-pay-received: "{prefix}&aYou received &e{amount} Coins from &e{sender}&a."
+  economy-pay-failed: "{prefix}&cTransaction failed. Insufficient balance."
+  economy-leaderboard-header: "{prefix}&7Top balances:"
+  economy-leaderboard-entry: "&8#{rank} &b{player}&7: &e{balance} Coins"
+  vanish-enabled: "{prefix}&aYou are now vanished."
+  vanish-disabled: "{prefix}&aYou are no longer vanished."
+  feed-self: "{prefix}&aYou have been fully fed and your saturation is maxed."
+  feed-other: "{prefix}&aYou fed &e{player}&a."
+  heal-self: "{prefix}&aYou have been healed."
+  heal-other: "{prefix}&aYou healed &e{player}&a."
+  clearchat: "{prefix}&aThe chat was cleared by &2{player}&a."
+
 permission-nodes:
   kick: "moderation.kick"
   mute: "moderation.mute"
@@ -19,3 +44,31 @@ permission-nodes:
   fly: "moderation.fly"
   gamemode: "moderation.gamemode"
   help: "moderation.help"
+  announce: "moderation.announce"
+  god: "moderation.god"
+  vanish: "moderation.vanish"
+  feed: "moderation.feed"
+  heal: "moderation.heal"
+  clearchat: "moderation.clearchat"
+  economy.balance: "moderation.economy.balance"
+  economy.give: "moderation.economy.give"
+  economy.pay: "moderation.economy.pay"
+  economy.leaderboard: "moderation.economy.leaderboard"
+
+blocked-chat-commands:
+  - msg
+  - tell
+  - tellraw
+  - me
+  - w
+  - whisper
+  - emsg
+  - etell
+  - ewhisper
+  - pm
+  - t
+  - m
+  - r
+  - reply
+  - ereply
+  - er
